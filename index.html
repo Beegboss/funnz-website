@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Site</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>We are a news site where we get news that you donw know yet and if you want to get emails from us login for more we are 100% real, trust us.</p>
+        </section>
+
+        <section>
+            <h2>What Happened This Week</h2>
+            <p>No, this is not fake, this is 100% real news.</p>
+
+        </section>
+
+        <section>
+            <h2>Joe Biden skipped National Ice Cream Day</h2>
+            <p>And Joe Biden hates ice cream he said.</p>
+            <button onclick="toggleDropdown('news2')">Read More</button>
+            <div id="news2" style="display:none;">
+                <p>More information on Joe Biden's activities we will see later.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Joe biden is a Skibidi Toilet Fan</h2>
+            <p>Joe biden said he loves Skibidi Toilet so much he watched every episode.</p>
+            <button onclick="toggleDropdown('news3')">Read More</button>
+            <div id="news3" style="display:none;">
+                <p>Details about the Skibidi toilet we dont know more yet sadlly:(</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Get Started</h2>
+            <p>Register for more news and get emails from us:</p>
+            <a href="Register.html">Register Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Newspaper</p>
+    </footer>
+
+    <script>
+        function toggleDropdown(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+

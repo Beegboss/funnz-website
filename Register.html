@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Registration</h1>
+    </header>
+
+    <main>
+        <section>
+            <form id="registrationForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="Walmart Bag">Walmart Bag</option>
+                    <option value="Kampf Helikopter">Kampf Helikopter</option>
+                    <option value="Quaso">Quaso</option>
+                    <option value="Panzer">Panzer</option>
+                    <option value="Das warst">Erkan alles</option>
+                </select>
+
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 News</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById("registrationForm");
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            alert("Are you serious bro?"); 
+        });
+    </script>
+</body>
+</html>
